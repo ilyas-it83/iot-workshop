@@ -1366,8 +1366,6 @@ components:
             type: object
             example:
               value: "10234"
-        urn:ietf:params:scim:schemas:extension:enterprise:2.0:User:
-          $ref: '#/components/schemas/GroupRequestObject_urnietfparamsscimschemasextensionenterprise2.0User'
     GroupResponseObject:
       type: object
       properties:
@@ -2020,15 +2018,6 @@ components:
         familyName:
           type: string
           example: Snow
-    UserObject_urnietfparamsscimschemasextensionenterprise2.0User:
-      required:
-      - organization
-      type: object
-      properties:
-        organization:
-          type: string
-          description: Identifier of the suborganization or headquarter organization where the user belongs to
-          example: "10234"
     UserResponseObject_meta:
       type: object
       properties:
@@ -2100,13 +2089,6 @@ components:
         value:
           type: string
           example: "20345"
-    GroupRequestObject_urnietfparamsscimschemasextensionenterprise2.0User:
-      type: object
-      properties:
-        organization:
-          type: string
-          description: Identifier of the suborganization or headquarter organization where the user belongs to
-          example: "10234"
     GroupResponseObject_meta:
       type: object
       properties:
