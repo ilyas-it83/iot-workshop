@@ -2053,17 +2053,6 @@ components:
         familyName:
           type: string
           example: Doe
-    UserResponseObject_urnietfparamsscimschemasextensionenterprise2.0User:
-      type: object
-      properties:
-        organization:
-          type: string
-          description: Headquarter organization reference
-          example: "10234"
-        division:
-          type: string
-          description: Suborganization reference
-          example: "10235"
     UserResponseObject_groups:
       type: object
       properties:
